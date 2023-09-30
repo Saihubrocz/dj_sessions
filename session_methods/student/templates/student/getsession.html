@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get session</title>
+</head>
+<body>
+    <h1>Get session...</h1>
+    {{nameee}} <br> <hr>
+    {{lname}} <hr>
+    {% for key in request.session.keys %}
+    {{key}} <br>
+    
+    {% endfor %}
+    <hr>
+    {% for key,value in items %}
+    {{key}} {{value}} <br>
+    {% endfor %}
+    <br>
+    {{age}}
+
+</body>
+</html>
